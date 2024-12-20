@@ -46,14 +46,6 @@ CREATE TABLE Doctor_Patient (
 
 );
 
-INSERT INTO `appointments`(`AppointmentId`, `Date`, `Time`, `Status`, `PatientID`, `DoctorID`) 
-VALUES 
-('1', '2024-12-20', '10:00:00', 'Scheduled', '1', '1'),
-('2', '2024-12-21', '11:30:00', 'Scheduled', '2', '2'),
-('3', '2024-12-22', '09:00:00', 'Completed', '3', '3'),
-('4', '2024-12-23', '14:00:00', 'Canceled', '1', '2'),
-('5', '2024-12-24', '16:00:00', 'Scheduled', '2', '3');
-
 INSERT INTO `departments`(`DepartmentID`, `Name`, `Location`) 
 VALUES 
 ('1', 'Cardiology', 'Building A'),
@@ -79,6 +71,15 @@ VALUES
 ('3', 'Sam Wilson', '60', 'Male', '345-333-3456'),
 ('4', 'Emily Davis', '25', 'Female', '456-444-4567'),
 ('5', 'Michael Brown', '50', 'Male', '567-555-5678');
+
+
+INSERT INTO `appointments`(`AppointmentId`, `Date`, `Time`, `Status`, `PatientID`, `DoctorID`) 
+VALUES 
+('1', '2024-12-20', '10:00:00', 'Scheduled', '1', '1'),
+('2', '2024-12-21', '11:30:00', 'Scheduled', '2', '2'),
+('3', '2024-12-22', '09:00:00', 'Completed', '3', '3'),
+('4', '2024-12-23', '14:00:00', 'Canceled', '1', '2'),
+('5', '2024-12-24', '16:00:00', 'Scheduled', '2', '3');
 
 
 
